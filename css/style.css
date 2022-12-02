@@ -1,0 +1,335 @@
+/* Geral */
+* {
+    font-family: 'Open sans', 'sans-serif';
+    color: #373A3C;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    transition: 0.5s;
+}
+
+/* sidebar */
+#sidebar {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-image: linear-gradient(blue, rgb(18, 140, 253));
+    padding-top: 40px;
+}
+
+#sidebar h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+#sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#sidebar a:hover {
+    color: yellow;
+}
+
+#sidebar li {
+    padding: 1rem;
+}
+
+.sidebar-container a {
+    position: relative;
+    margin-left: 40px;
+    margin-right: auto;
+    width: 200px;
+}
+
+.logo-doceria {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sessao */
+.content {
+    position: absolute; /*mover o conteudo livremente*/
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+.content h1, .content h2 {
+    color: #006599;
+    margin-bottom: 2rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.content h2 {
+    font-size: 2.1875rem;
+    font-weight: normal;
+}
+
+section {
+    padding-left: 3.125rem;
+}
+/* bem vindo */
+#sessao-bemvindo {
+    padding-left: 0;
+}
+
+.sessao-bemvindo-content {
+    padding-left: 3.125rem;
+}
+
+#sessao-bemvindo .banner {
+    height: 500px;
+    background-image: url("../imgs/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#sessao-bemvindo h1 {
+    margin-top: 4.375rem;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.sessao-minibanner {
+    width: 300px;
+    height: 400px;
+    background-image: url("../imgs/banner3.jpg");
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.sessao-descricao {
+    position: absolute;
+    left: 370px;
+    padding-right: 30px;
+}
+
+.sessao-descricao p {
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+}
+
+.sessao-bemvindo-btn, form input[type=submit] {
+    background-color: #006599;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.25rem 2.5rem;
+    transition: 0.5s;
+    display: block;
+    width: 12.5rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 1.563rem;
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover {
+    background-color: #2790c6;
+}
+
+/* sessao sobre */
+#sessao-sobre .sessao-minibanner {
+    float: right;
+    margin-right: 50px;
+    background-image: url("../imgs/banner4.jpg");
+}
+
+#sessao-sobre .sessao-descricao {
+    position: absolute;
+    left: 1.563rem;
+    width: calc(100% - 400px);
+}
+
+/* galeria */
+.banner-galeria {
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 12.5rem;
+}
+
+#sessao-doces1, #sessao-doces2, #sessao-doces3 {
+    padding-right: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.doces1-imgs {
+    width: 18.8%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+#img1 {
+    background-image: url("../imgs/galeria1.jpg");
+    margin-left: 0;
+}
+
+#img2 {
+    background-image: url("../imgs/galeria2.jpg");
+}
+
+#img3 {
+    background-image: url("../imgs/galeria3.jpg");
+}
+
+#img4 {
+    background-image: url("../imgs/galeria4.jpg");
+}
+
+#img5 {
+    background-image: url("../imgs/galeria5.jpg");
+    margin-right: 0;
+}
+
+.doces2-imgs {
+    width: 32.3%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+#img6 {
+    background-image: url("../imgs/galeria6.jpg");
+    margin-left: 0;
+}
+
+#img7 {
+    background-image: url("../imgs/galeria7.jpg");
+}
+
+#img8 {
+    background-image: url("../imgs/galeria8.jpg");
+    margin-right: 0;
+}
+
+.doces3-imgs {
+    width: 23.9%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+#img9 {
+    background-image: url("../imgs/galeria9.jpg");
+    margin-left: 0;
+}
+
+#img10 {
+    background-image: url("../imgs/galeria10.jpg");
+}
+
+#img11 {
+    background-image: url("../imgs/galeria11.jpg");
+}
+
+#img12 {
+    background-image: url("../imgs/galeria12.jpg");
+    margin-right: 0;
+}
+
+/* contato */
+#form-contato {
+    width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+    display: block;
+    border: 1px solid #006599;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Open sans', sans-serif;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+    border-color: #2790c6;
+}
+
+#form-contato textarea{
+    height: 9.375rem;
+}
+
+#form-contato ::placeholder {
+    color: #2790c6;
+}
+
+#form-contato input[type=submit] {
+    margin-left: 0;
+    font-size: 1rem;
+    width: 11.25rem;
+}
+
+/* footer */
+footer {
+    height: 13rem;
+    padding-top: 9.375rem;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    color: #006599;
+}
+
+/* Responsivo */
+@media(max-width: 1024px) /*laptop - ok*/ {
+    /* sidebar */
+    #sidebar li {
+        padding: 0.5rem;
+    }
+
+    /* Sessão bem vindo */
+    .sessao-descricao p {
+        line-height: 1;
+        font-size: 0.844rem;
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    .descritivo2 p {
+        line-height: 1;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    /* galeria */
+    .doces1-imgs {
+        width: 18.6%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+    .doces2-imgs {
+        width: 32%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+    .doces3-imgs {
+        width: 23.6%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+}
